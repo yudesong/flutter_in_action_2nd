@@ -3,10 +3,10 @@ name: Build and Deploy
 
 # 触发条件
 on:
-    # 当 develop 分支有代码推送时触发
+    # 当 main 分支有代码推送时触发
     push:
         branches:
-            - develop
+            - main
 
 # 一个 workflow 可以包含多个 job
 jobs:
