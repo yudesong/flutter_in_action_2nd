@@ -36,6 +36,9 @@ jobs:
           # 选择要使用的 node 版本
           node-version: '16'
 
+      - name: Set npm registry to npmmirror (fix ENOTFOUND)
+        run: npm config set registry https://registry.npmmirror.com
+  
       # 如果你的依赖是使用npm的，用这种
       # 缓存 npm node_modules
       - name: Cache dependencies
